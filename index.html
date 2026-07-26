@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biólogos en Crecimiento</title>
+    <link rel="icon" href="LOGO VERDE.png" type="imagen/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+</head>
+<body>
+    <!-- ===== BARRA DE NAVEGACIÓN ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="verde.jpg" alt="Logo" class="logo-img">
+                <span>Biólogos en Crecimiento</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#mision-vision">Misión y Visión</a></li>
+                <li><a href="#colaboradores">Colaboradores</a></li>
+                <li><a href="#eventos">Galería</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <!-- Menú hamburguesa para móvil -->
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </div>
+    </nav>
+
+    <!-- ===== SECCIÓN INICIO ===== -->
+    <section id="inicio">
+        <!-- ===== GALERÍA DE IMÁGENES DESLIZANTES ===== -->
+        <div class="carrusel">
+            <div class="track" id="track">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="13.jpg" alt="Descripción slide 1">
+                    <div class="slide-content">
+                        <p>Biólogos en Crecimiento</p>
+                        <a href="nosotros.html" class="btn-vermas">Ver más</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="1.jpg" alt="Descripción slide 2">
+                    <div class="slide-content">
+                        <p>Involúcrate</p>
+                        <a href="#enlace" class="btn-vermas">Patrocinio</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="15.jpg" alt="Descripción slide 3">
+                    <div class="slide-content">
+                        <p>Haz crecer la red</p>
+                        <a href="#enlace" class="btn-vermas">Participa</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Botones de navegación -->
+            <button class="btn-izquierda" id="btnIzquierda">‹</button>
+            <button class="btn-derecha" id="btnDerecha">›</button>
+            <!-- Indicadores -->
+            <div class="indicadores" id="indicadores"></div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN MISIÓN Y VISIÓN ===== -->
+    <section id="mision-vision">
+        <!-- ===== IMAGEN FIJA CON TEXTO CENTRADO ===== -->
+        <div class="imagen-fija">
+            <div class="fija-texto">
+                    <h2>Biólogos en Crecimiento</h2>
+                    <p>Red de biólogos mexicanos enfocados en la divulgacion de la ciencia</p>
+                </div>
+
+            <div class="fija-contenedor">
+                <img src="7.jpg" alt="Biología en crecimiento">
+            </div>
+        </div>
+
+        <!-- ===== MISIÓN (imagen izquierda, texto derecha) ===== -->
+        <div class="mision-vision-container">
+            <div class="mv-item mision">
+                <div class="mv-imagen">
+                    <img src="8.jpg" alt="Misión">
+                </div>
+                <div class="mv-texto">
+                    <h3>Nuestra Misión</h3>
+                    <p>Fomentar el conocimiento científico y la conservación de la biodiversidad a través de la educación, investigación y acción comunitaria, formando una red de biólogos comprometidos con el desarrollo sostenible.</p>
+                </div>
+            </div>
+
+            <!-- ===== VISIÓN (imagen derecha, texto izquierda) ===== -->
+            <div class="mv-item vision">
+                <div class="mv-texto">
+                    <h3>Nuestra Visión</h3>
+                    <p>Ser la comunidad de referencia en biología aplicada, reconocida por su impacto en la conservación y su capacidad para generar cambios positivos en la sociedad a través de la ciencia participativa y la innovación.</p>
+                </div>
+                <div class="mv-imagen">
+                    <img src="9.jpg" alt="Visión">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN COLABORADORES (VERSIÓN GRID) ===== -->
+    <section id="colaboradores">
+        <h2>Red de colaboradores</h2>
+        <div class="colab-grid">
+            <div class="colab-item">
+                <img src="16.jpg" alt="Fungario FCME">
+                <a href="https://instagram.com/fungario_fcme/" target="_blank">@Fungario FCME</a>
+            </div>
+            <div class="colab-item">
+                <img src="17.jpg" alt="BAAK Huesos">
+                <a href="https://instagram.com/baak.huesos/" target="_blank">@BAAK Huesos</a>
+            </div>
+            <div class="colab-item">
+                <img src="18.jpg" alt="Ulices Carrillo">
+                <a href="https://instagram.com/ulices.adolfo.carrillo/" target="_blank">@Ulices Carrillo</a>
+            </div>
+            <div class="colab-item">
+                <img src="19.jpg" alt="FEAM">
+                <a href="https://instagram.com/foroaracnidosmx/" target="_blank">@FEAM</a>
+            </div>
+            <div class="colab-item">
+                <img src="20.jpg" alt="Naturailustra">
+                <a href="https://instagram.com/naturailustra/" target="_blank">@Naturailustra</a>
+            </div>
+            <div class="colab-item">
+                <img src="23.jpg" alt="Rugido de Cambio">
+                <a href="https://www.instagram.com/rugidodecambio/" target="_blank">@Rugido de Cambio</a>
+            </div>
+            <div class="colab-item">
+                <img src="21.jpg" alt="Destello Estelar">
+                <a href="https://instagram.com/destelloestelar5/" target="_blank">@Destello Estelar</a>
+            </div>
+            <div class="colab-item">
+                <img src="22.jpg" alt="Red de Suelos MX">
+                <a href="https://instagram.com/redmxsuelos/" target="_blank">@Red de Suelos MX</a>
+            </div>
+            <div class="colab-item">
+                <img src="24.jpg" alt="Red de Suelos MX">
+                <a href="https://www.instagram.com/lab.zaragoza/" target="_blank">@Laboratorio Zaragoza</a>
+            </div>
+            <div class="colab-item">
+                <img src="25.jpg" alt="Red de Suelos MX">
+                <a href="https://www.instagram.com/biociencia.divulgacion/" target="_blank">@Biociencia A.C</a>
+            </div>
+            <div class="colab-item">
+                <img src="26.jpg" alt="Red de Suelos MX">
+                <a href="https://www.instagram.com/chyromx/" target="_blank">@ChyroMéxico</a>
+            </div>
+            <div class="colab-item">
+                <img src="27.jpg" alt="Red de Suelos MX">
+                <a href="https://www.instagram.com/phasma_mx/" target="_blank">@Phasma Mx</a>
+            </div>
+            <div class="colab-item">
+                <img src="28.jpg" alt="Red de Suelos MX">
+                <a href="https://www.instagram.com/mastouami/" target="_blank">@Coleccion de Mamíferos UAMI</a>
+            </div>
+            <div class="colab-item">
+                <img src="29.jpg" alt="Red de Suelos MX">
+                <a href="https://www.instagram.com/terramovil_unam_/" target="_blank">@Terramóvil UNAM</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN GALERÍA DE EVENTOS ===== -->
+    <section id="eventos">
+        <h2>Galería de Eventos</h2>
+        <div class="eventos-grid">
+            <a href="evento1.html" class="evento-item" style="text-decoration: none; color: inherit;">
+                <img src="1.jpg" alt="Evento 1">
+                <p>Preescolares de Chimalhuacán</p>
+            </a>
+
+            <a href="evento1.html" class="evento-item" style="text-decoration: none; color: inherit;">            
+                <img src="3.jpg" alt="Evento 2">
+                <p>Unidad habitacional, Iztapalapa</p>
+            </a>
+
+            <a href="evento1.html" class="evento-item" style="text-decoration: none; color: inherit;">
+                <img src="4.jpg" alt="Evento 3">
+                <p>Semana de la biologia, UAMI</p>
+            </a>
+
+            <a href="evento1.html" class="evento-item" style="text-decoration: none; color: inherit;">
+                <img src="5.jpg" alt="Evento 4">
+                <p>HCNE, Tepito</p>
+            </a>
+
+            <a href="evento1.html" class="evento-item" style="text-decoration: none; color: inherit;">
+                <img src="6.jpg" alt="Evento 5">
+                <p>Parque del Pueblo, Neza</p>
+            </a>
+
+            <a href="evento6.html" class="evento-item" style="text-decoration: none; color: inherit;">
+                <img src="7.jpg" alt="Evento 6">
+                <p>Pabellón de la Biodiversidad, CU</p>
+            </a>
+
+            <a href="evento7.html" class="evento-item" style="text-decoration: none; color: inherit;">
+                <img src="8.jpg" alt="Evento 7">
+                <p>Día internacional del suelo</p>
+            </a>
+
+            <a href="evento8.html" class="evento-item" style="text-decoration: none; color: inherit;">
+                <img src="9.jpg" alt="Evento 8">
+                <p>Dia del medio ambiente, Chimalhuacan</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN MAPA ===== -->
+    <section id="mapa">
+        <h2>Mapa de Eventos Realizados</h2>
+        <div id="mapa-container">
+            <div id="mapa-leaflet"></div>
+        </div>
+        <div class="mapa-leyenda">
+            <p>📍 Espacios donde hemos realizado eventos</p>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN CONTACTO ===== -->
+    <section id="contacto">
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Biólogos en Crecimiento</h3>
+                    <p>📧 biologosencrecimiento@gmail.com</p>
+                    <p>📍 Área metropolitana de la Ciudad de México</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank">📸 Instagram</a>
+                        <a href="#" target="_blank">📘 Facebook</a>
+                        <a href="#" target="_blank">▶️ YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Biólogos en Crecimiento. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+    <script>
+// =============================================
+// 1. CARRUSEL PRINCIPAL - Movimiento horizontal
+// =============================================
+let slideActual = 0;
+const track = document.getElementById('track');
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+const btnIzquierda = document.getElementById('btnIzquierda');
+const btnDerecha = document.getElementById('btnDerecha');
+const indicadores = document.getElementById('indicadores');
+
+// Crear indicadores
+for (let i = 0; i < totalSlides; i++) {
+    const indicador = document.createElement('div');
+    indicador.classList.add('indicador');
+    if (i === 0) indicador.classList.add('activo');
+    indicador.dataset.index = i;
+    indicador.addEventListener('click', function() {
+        moverSlide(parseInt(this.dataset.index));
+    });
+    indicadores.appendChild(indicador);
+}
+
+// Función principal para mover el carrusel
+function moverSlide(indice) {
+    if (indice >= totalSlides) indice = 0;
+    if (indice < 0) indice = totalSlides - 1;
+    
+    slideActual = indice;
+    track.style.transform = `translateX(-${slideActual * 100}%)`;
+    
+    document.querySelectorAll('.indicador').forEach((el, i) => {
+        el.classList.toggle('activo', i === slideActual);
+    });
+}
+
+// Eventos de los botones
+btnDerecha.addEventListener('click', function() {
+    moverSlide(slideActual + 1);
+});
+
+btnIzquierda.addEventListener('click', function() {
+    moverSlide(slideActual - 1);
+});
+
+// Auto-reproducción cada 4 segundos
+let intervalo = setInterval(() => {
+    moverSlide(slideActual + 1);
+}, 4000);
+
+// Pausar al pasar el mouse
+document.querySelector('.carrusel').addEventListener('mouseenter', function() {
+    clearInterval(intervalo);
+});
+
+document.querySelector('.carrusel').addEventListener('mouseleave', function() {
+    intervalo = setInterval(() => {
+        moverSlide(slideActual + 1);
+    }, 4000);
+});
+
+// =============================================
+// 2. MENÚ HAMBURGUESA para móvil
+// =============================================
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
+
+menuToggle.addEventListener('click', function() {
+    navMenu.classList.toggle('activo');
+});
+
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', function() {
+        navMenu.classList.remove('activo');
+    });
+});
+
+// =============================================
+// 3. MAPA CON PUNTOS DE EVENTOS
+// =============================================
+const map = L.map('mapa-leaflet').setView([19.4326, -99.1332], 6);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+
+const eventosRealizados = [
+    {
+        nombre: "Feria de la Ciencia Utópica",
+        fecha: "12 de abril, 2025",
+        lugar: "Utopia Libertad, Iztapalapa",
+        lat: 19.32481564164111,
+        lng: -99.06546106439916,
+        descripcion: "Stands de Aracnología, biología marina, micología, paleontologìa y murciélagos "
+    },
+    {
+        nombre: "Día internacional de la Mujer y la Niña en la ciencia",
+        fecha: "16 de febrero, 2025",
+        lugar: "Planetario, 'El Gran Ehécatl' ",
+        lat: 19.59541870561852, 
+        lng: -99.05414329553322,
+        descripcion: "Ponencia de la Dra. Laura Bertha Reyes"
+    },
+    {
+        nombre: "XXIII Semana de la Biología, UAMI ",
+        fecha: "2 al 5 de junio, 2025",
+        lugar: "Universidad Autónoma Metropolitana Iztapalapa",
+        lat: 19.362411012647076, 
+        lng: -99.07286970233474,
+        descripcion: "12 Stands interactivos"
+    },
+    {
+        nombre: "Festival del Medio Ambiente y fascinación por las plantas",
+        fecha: "29 de junio, 2025",
+        lugar: "Parque Yecahuizotl, ANP Sierra de Santa Catarina",
+        lat: 19.33565134993841, 
+        lng: -98.9761180193159,
+        descripcion: "6 stands interactivos"
+    },
+    {
+        nombre: "Guardianes del mito",
+        fecha: "2 de agosto, 2025",
+        lugar: "Honorable Casa Naciona del Estudiante",
+        lat: 19.440124477768983,
+        lng: -99.12834872433682,
+        descripcion: "Stands varios"
+    },
+    {
+        nombre: "Feria ambiental: Fungociencia en Neza",
+        fecha: "24 de agosto, 2025",
+        lugar: "Parque del Pueblo, Nezahualcóyotl",
+        lat: 19.394793633246685, 
+        lng: -99.00536855215886,
+        descripcion: "Stands varios"
+    },
+    {
+        nombre: "Feria ambiental: hagamos conciencia, hagamos el cambio",
+        fecha: "25 de septiembre, 2025",
+        lugar: "Plaza Zaragoza, Cabecera municipal",
+        lat: 19.416577877053488, 
+        lng: -98.94486072591268,
+        descripcion: "Stands varios"
+    },
+    {
+        nombre: "Festival de la Biodiversidad",
+        fecha: "18 de julio, 2026",
+        lugar: "Comunal Analco, Milpa Alta",
+        lat: 19.190594451173723, 
+        lng: -99.02910116008552 ,
+        descripcion: "Taller: Suelo, donde nace la biovidersidad"
+    },
+    {
+        nombre: "Festival de semillas",
+        fecha: "23 de mayo, 2026",
+        lugar: "Utopía Mixiuhca",
+        lat: 19.407059079232376,  
+        lng: -99.08842173926074,
+        descripcion: "Stands varios"
+    },
+    {
+        nombre: "Festival ambiental: Semillas de Ciencia",
+        fecha: "2 de mayo, 2026",
+        lugar: "ANP Bosque de Tlalpan",
+        lat: 19.293983004853438, 
+        lng: -99.19858911456556,
+        descripcion: "Stands varios"
+    },
+    {
+        nombre: "Ecosistemas resilientes",
+        fecha: "24 y 25 de abril, 2026",
+        lugar: "Museo Universum",
+        lat: 19.311317388967044,  
+        lng: -99.18036452474446,
+        descripcion: "Stands varios"
+    },
+    {
+        nombre: "El barrio también hace ciencia",
+        fecha: "16 de abril, 2026",
+        lugar: "Sec. Diurna No. 313 Lázaro Cárdenas del Río, Iztapalapa",
+        lat: 19.34757778382009, 
+        lng: -99.0065085833759,
+        descripcion: "Stands varios"
+    },
+    {
+        nombre: "Mujeres que transforman",
+        fecha: "14 de marzo, 2026",
+        lugar: "Parque Tulyehualco, Xochimilco",
+        lat: 19.25397456949592,  
+        lng: -99.01149860107274,
+        descripcion: "Stands varios"
+    },
+    {
+        nombre: "Jornada Entomológica: Bajo las Alas",
+        fecha: "27 de febrero, 2026",
+        lugar: "Foro Cultural Campus II, FES Zaragoza",
+        lat: 19.37166026208584,  
+        lng: -99.03362100090396,
+        descripcion: "Stands varios"
+    },
+    {
+        nombre: "Viernes de ciencia",
+        fecha: "30 de enero, 2026",
+        lugar: "UNIVERSUM",
+        lat: 19.311317093562202,  
+        lng: -99.18041158769854,
+        descripcion: "Stands varios"
+    },
+    {
+        nombre: "Día de la educación ambiental",
+        fecha: "26 de enero, 2026",
+        lugar: "Plaza Cívica Vidrieros, Chimalhuacán",
+        lat: 19.429709957038334,  
+        lng: -98.97327198113571,
+        descripcion: "Stands varios"
+    }
+];
+
+eventosRealizados.forEach(function(evento) {
+    const popupContent = `
+        <div style="max-width: 300px;">
+            <h3 style="color: #2c5f2d; margin: 0 0 8px 0;">${evento.nombre}</h3>
+            <p style="margin: 4px 0;"><strong>📅 Fecha:</strong> ${evento.fecha}</p>
+            <p style="margin: 4px 0;"><strong>📍 Lugar:</strong> ${evento.lugar}</p>
+            <p style="margin: 8px 0 0 0; font-style: italic;">${evento.descripcion}</p>
+        </div>
+    `;
+
+    const marker = L.marker([evento.lat, evento.lng]).addTo(map);
+    marker.bindPopup(popupContent, {
+        maxWidth: 300,
+        className: 'evento-popup'
+    });
+});
+
+if (eventosRealizados.length > 0) {
+    const group = L.featureGroup();
+    eventosRealizados.forEach(function(e) {
+        group.addLayer(L.marker([e.lat, e.lng]));
+    });
+    map.fitBounds(group.getBounds().pad(0.2));
+}
+
+console.log('✅ Mapa cargado con ' + eventosRealizados.length + ' eventos');
+</script>
+</body>
+</html>

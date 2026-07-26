@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biólogos en Crecimiento - Preescolares de Chimalhuacán</title>
+    <link rel="icon" href="LOGO VERDE.png" type="imagen/png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- ===== BARRA DE NAVEGACIÓN ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="verde.jpg" alt="Logo" class="logo-img">
+                <span>Biólogos en Crecimiento</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <!-- Menú hamburguesa para móvil -->
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </div>
+    </nav>
+
+    <!-- ===== SECCIÓN GALERÍA DEL EVENTO ===== -->
+    <section id="galeria-evento" style="padding-top: 40px;">
+        <!-- Título del evento -->
+        <h1 style="font-size: 2.8rem; color: #2c5f2d; text-align: center; margin-bottom: 10px;">Preescolares de Chimalhuacán</h1>
+        <p style="text-align: center; font-size: 1.2rem; color: #555; margin-bottom: 40px;">
+            📅 15 de marzo, 2025 | 📍 Chimalhuacán, Estado de México
+        </p>
+
+         <!-- ===== GALERÍA CON TAMAÑOS VARIADOS ===== -->
+        <div class="galeria-evento-grid">
+            <!-- Imagen grande (2x2) -->
+            <div class="galeria-evento-item grande">
+                <img src="1.jpg" alt="Foto destacada del evento">
+            </div>
+            
+            <!-- Imagen mediana (2x1) -->
+            <div class="galeria-evento-item mediano">
+                <img src="2.jpg" alt="Foto 2 del evento">
+            </div>
+            
+            <!-- Imagen vertical (1x2) -->
+            <div class="galeria-evento-item vertical">
+                <img src="3.jpg" alt="Foto 3 del evento">
+            </div>
+            
+            <!-- Imagen pequeña (1x1) -->
+            <div class="galeria-evento-item pequeno">
+                <img src="4.jpg" alt="Foto 4 del evento">
+            </div>
+            
+            <!-- Imagen horizontal (3x1) -->
+            <div class="galeria-evento-item horizontal">
+                <img src="5.jpg" alt="Foto 5 del evento">
+            </div>
+            
+            <!-- Imagen pequeña (1x1) -->
+            <div class="galeria-evento-item pequeno">
+                <img src="6.jpg" alt="Foto 6 del evento">
+            </div>
+            
+            <!-- Imagen pequeña (1x1) -->
+            <div class="galeria-evento-item pequeno">
+                <img src="7.jpg" alt="Foto 7 del evento">
+            </div>
+            
+            <!-- Imagen grande (2x2) -->
+            <div class="galeria-evento-item grande">
+                <img src="8.jpg" alt="Foto 8 del evento">
+            </div>
+            
+            <!-- Imagen mediana (2x1) -->
+            <div class="galeria-evento-item mediano">
+                <img src="9.jpg" alt="Foto 9 del evento">
+            </div>
+        </div>
+
+        <!-- ===== BOTÓN PARA VOLVER ===== -->
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="index.html" style="display: inline-block; background: #2c5f2d; color: white; padding: 12px 35px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1rem; transition: all 0.3s;">
+                ← Volver a la galería
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+     <section id="contacto">
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Biólogos en Crecimiento</h3>
+                    <p>📧 biologosencrecimiento@gmail.com</p>
+                    <p>📍 Área metropolitana de la Ciudad de México</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank">📸 Instagram</a>
+                        <a href="#" target="_blank">📘 Facebook</a>
+                        <a href="#" target="_blank">▶️ YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Biólogos en Crecimiento. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </section>
+    <script>
+        // Menú hamburguesa
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('activo');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('activo');
+            });
+        });
+    </script>
+</body>
+</html>
